@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Shree Gopal Residency | Premium Demo Website</title>
+  <style>
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#1e293b}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1180px;margin:auto;padding:0 20px}
+    .topbar{background:#0f172a;color:#fff;padding:10px 0;font-size:14px}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .navbar{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 8px 24px rgba(2,6,23,.06)}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+    .brand{font-weight:700;font-size:22px;color:#0f172a}
+    .menu{display:flex;gap:22px;flex-wrap:wrap;font-size:15px;color:#334155}
+    .hero{background:linear-gradient(rgba(15,23,42,.60),rgba(15,23,42,.60)),url('https://content3.jdmagicbox.com/v2/comp/bhilwara/c5/9999p1482.1482.230518072045.d3c5/catalogue/hotel-shree-gopal-residency-gandhi-nagar-bhilwara-hotels-t1gobbx4f1.jpg') center/cover no-repeat;color:#fff}
+    .hero .content{padding:90px 0 110px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+    .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:9px 14px;border-radius:999px;font-size:13px;margin-bottom:16px}
+    h1{font-size:54px;line-height:1.08;margin:0 0 16px}
+    .lead{font-size:19px;max-width:700px;color:#e2e8f0}
+    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+    .btn{padding:14px 22px;border-radius:14px;font-weight:700;display:inline-block}
+    .btn-primary{background:#f59e0b;color:#111827}
+    .btn-outline{border:1px solid rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.08)}
+    .hero-card{background:rgba(255,255,255,.12);backdrop-filter:blur(10px);padding:24px;border-radius:24px;border:1px solid rgba(255,255,255,.14)}
+    .hero-card h3{margin:0 0 16px;font-size:24px}
+    .hero-card p{margin:10px 0;color:#f8fafc}
+    .stats{margin-top:-42px}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .stat{background:#fff;padding:24px;border-radius:22px;box-shadow:0 16px 40px rgba(15,23,42,.08);text-align:center}
+    .stat strong{display:block;font-size:28px;color:#0f172a;margin-bottom:6px}
+    section{padding:72px 0}
+    h2{font-size:38px;margin:0 0 14px;color:#0f172a}
+    .sub{max-width:760px;color:#64748b;font-size:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}
+    .card{background:#fff;border-radius:24px;padding:26px;box-shadow:0 12px 32px rgba(15,23,42,.06)}
+    .card h3{margin-top:0;font-size:23px}
+    .card p{color:#64748b}
+    .about{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+    .about-box{background:#fff;border-radius:28px;padding:28px;box-shadow:0 12px 32px rgba(15,23,42,.06)}
+    .amenities{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:20px}
+    .amenity{padding:16px 18px;background:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;font-weight:600}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .gallery img{width:100%;height:270px;object-fit:cover;border-radius:22px;box-shadow:0 12px 32px rgba(15,23,42,.08)}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .review{background:#fff;border-radius:22px;padding:24px;box-shadow:0 12px 32px rgba(15,23,42,.06)}
+    .review .stars{font-size:20px;color:#f59e0b;margin-bottom:12px}
+    .review p{color:#475569}
+    .contact{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;border-radius:32px;padding:36px}
+    .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    .contact-card{background:rgba(255,255,255,.08);padding:24px;border-radius:24px;border:1px solid rgba(255,255,255,.12)}
+    .contact-card p{margin:10px 0;color:#e2e8f0}
+    footer{padding:26px 0 34px;text-align:center;color:#64748b;font-size:14px}
+    @media (max-width:980px){
+      .hero .content,.about,.contact-wrap{grid-template-columns:1fr}
+      .stats-grid,.grid-3,.gallery,.reviews{grid-template-columns:repeat(2,1fr)}
+      h1{font-size:42px}
+    }
+    @media (max-width:640px){
+      .stats-grid,.grid-3,.gallery,.reviews,.amenities{grid-template-columns:1fr}
+      h1{font-size:34px}
+      h2{font-size:30px}
+      .lead,.sub{font-size:16px}
+      .menu{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container wrap">
+      <div>Hotel Shree Gopal Residency • Gandhi Nagar, Bhilwara</div>
+      <div>Call: +91 95292 92961</div>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="container nav">
+      <div class="brand">Shree Gopal Residency</div>
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container content">
+      <div>
+        <span class="badge">Comfort • Convenience • Hospitality</span>
+        <h1>Comfortable Stay in Gandhi Nagar, Bhilwara</h1>
+        <div class="lead">
+          Welcome to Hotel Shree Gopal Residency — a practical and comfortable stay option for family visits, city travel, and business guests.
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="tel:+919529292961">Call for Booking</a>
+          <a class="btn btn-outline" href="https://maps.google.com/?q=Hotel+Shree+Gopal+Residency+Gandhi+Nagar+Bhilwara" target="_blank">View Location</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Quick Details</h3>
+        <p><strong>Address:</strong> Ganesh Mandir Road, Gandhi Nagar, Bhilwara, Rajasthan 311001</p>
+        <p><strong>Phone:</strong> +91 95292 92961</p>
+        <p><strong>Guest Rating:</strong> 4.4 / 5</p>
+        <p><strong>Best For:</strong> Family Stay, Business Travel, Short City Visit</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat"><strong>4.4/5</strong>Public Rating</div>
+      <div class="stat"><strong>Prime</strong>Gandhi Nagar Location</div>
+      <div class="stat"><strong>Clean</strong>Comfortable Stay</div>
+      <div class="stat"><strong>Direct</strong>Call & Enquiry</div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container about">
+      <div>
+        <h2>About the Hotel</h2>
+        <div class="sub">
+          Hotel Shree Gopal Residency offers a practical stay experience for visitors looking for convenience, comfort, and direct accessibility in Bhilwara.
+        </div>
+        <p style="color:#64748b;margin-top:18px">
+          This website demo is made in a business-ready style so it can be shown directly to clients. It is suitable for hotels, guest houses, lodges, and local stay businesses that want a clean online presence.
+        </p>
+      </div>
+      <div class="about-box" id="amenities">
+        <h3 style="margin-top:0">Amenities</h3>
+        <div class="amenities">
+          <div class="amenity">Comfortable Rooms</div>
+          <div class="amenity">Room Service</div>
+          <div class="amenity">Dine-In Facility</div>
+          <div class="amenity">Family Friendly Stay</div>
+          <div class="amenity">Business Friendly Location</div>
+          <div class="amenity">Hygienic Environment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#ffffff">
+    <div class="container">
+      <h2>Why Guests Choose This Stay</h2>
+      <div class="sub">Simple, professional presentation for direct guest enquiries and local hotel branding.</div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Prime Local Access</h3>
+          <p>Situated in Gandhi Nagar, Bhilwara for convenient approach and easy navigation.</p>
+        </div>
+        <div class="card">
+          <h3>Comfort Focused</h3>
+          <p>Designed to present a clean and practical accommodation option for different types of visitors.</p>
+        </div>
+        <div class="card">
+          <h3>Fast Contact</h3>
+          <p>Call and map buttons help guests connect quickly without confusion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="sub">Sample presentation images for website demo purpose.</div>
+      <div class="gallery">
+        <img src="https://content3.jdmagicbox.com/v2/comp/bhilwara/c5/9999p1482.1482.230518072045.d3c5/catalogue/hotel-shree-gopal-residency-gandhi-nagar-bhilwara-hotels-t1gobbx4f1.jpg" alt="Hotel exterior">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max500/96330240.jpg?hp=1&k=298ac411d2eae77c1ac503a3d3f468b78b159679fdad71c3bc948f9298450e62&o=" alt="Hotel room">
+        <img src="https://pix10.agoda.net/hotelImages/109/10935970/10935970_19121115020085588585.jpg?ca=9&ce=1&s=702x392" alt="Room interior">
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" style="background:#ffffff">
+    <div class="container">
+      <h2>Guest Impressions</h2>
+      <div class="sub">Public review tone reflected in a clean website layout.</div>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Comfortable rooms and supportive stay experience.</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>Good option for guests looking for a practical hotel stay in the city.</p>
+        </div>
+        <div class="review">
+          <div class="stars">★★★★☆</div>
+          <p>Suitable for family as well as business travel requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact">
+        <div class="contact-wrap">
+          <div>
+            <h2 style="color:#fff">Contact & Booking</h2>
+            <div class="sub" style="color:#cbd5e1">Reach out directly for booking enquiry, room availability, and stay support.</div>
+          </div>
+          <div class="contact-card">
+            <p><strong>Phone:</strong> +91 95292 92961</p>
+            <p><strong>Address:</strong> Ganesh Mandir Road, Gandhi Nagar, Bhilwara, Rajasthan 311001</p>
+            <div class="cta">
+              <a class="btn btn-primary" href="tel:+919529292961">Call Now</a>
+              <a class="btn btn-outline" href="https://maps.google.com/?q=Hotel+Shree+Gopal+Residency+Gandhi+Nagar+Bhilwara" target="_blank">Open Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Premium hotel demo website • Ready to show to clients
+  </footer>
+</body>
+</html>
